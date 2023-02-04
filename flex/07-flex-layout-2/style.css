@@ -10,6 +10,7 @@ body {
   color: white;
 }
 
+
 .footer {
   height: 72px;
   background: #eee;
@@ -25,4 +26,63 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* my answer */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.maincont {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  flex-basis: 300px;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 32px;
+ gap: 32px;
+}
+
+.card {
+  flex-basis: 300px;
+  padding: 32px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
